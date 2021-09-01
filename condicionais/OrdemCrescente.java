@@ -16,20 +16,20 @@ public class OrdemCrescente {
 		System.out.println("Entre com o terceiro numero: ");
 		n3 = leia.nextInt();
 		
-		if(n1 > n2 && n1 > n3) {
-			if(n2 > n3) {
+		if(n1 >= n2 && n1 >= n3) {
+			if(n2 >= n3) {
 				System.out.println("Ordem Crescente: "+ n3 + ", " + n2 + ", " + n1);
 			}else {
 				System.out.println("Ordem Crescente: "+ n2 + ", " + n3 + ", " + n1);
 			}
-		}else if (n2 > n1 && n2 > n3) {
-			if(n3 > n1) {
+		}else if (n2 >= n1 && n2 >= n3) {
+			if(n3 >= n1) {
 				System.out.println("Ordem Crescente: "+ n1 + ", " + n3 + ", " + n2);
 			}else {
 				System.out.println("Ordem Crescente: "+ n3 + ", " + n1 + ", " + n2);
 			}
 		}else{
-			if(n2 > n1) {
+			if(n2 >= n1) {
 				System.out.println("Ordem Crescente: "+ n1 + ", " + n2 + ", " + n3);
 			}else {
 				System.out.println("Ordem Crescente: "+ n2 + ", " + n1 + ", " + n3);

@@ -15,16 +15,34 @@ public class Pesquisa {
 			System.out.println("---- Pessoa "+contPes+" ----");
 			System.out.println("Qual a sua idade: ");
 			idade = leia.nextInt();
+			while(idade < 1 || idade >130) {
+				System.out.println("Digite uma idade válida: ");
+				idade = leia.nextInt();
+			}
 			System.out.println("Qual o seu sexo: Opções"
 					+ "\n1 - Feminino"
 					+ "\n2 - Masculino"
 					+ "\n3 - Outros");
 			sexo = leia.nextInt();
+			while(sexo < 1 || sexo > 3) {
+				System.out.println("Opção Invalida. Qual o seu sexo: Opções"
+						+ "\n1 - Feminino"
+						+ "\n2 - Masculino"
+						+ "\n3 - Outros");
+				sexo = leia.nextInt();
+			}
 			System.out.println("Qual das opções te define:"
 					+ "\n1 - Calmo(a)"
 					+ "\n2 - Nervoso(a)"
 					+ "\n3 - Agressivo(a)");
 			opc = leia.nextInt();
+			while(opc < 1 || opc > 3) {
+				System.out.println("Opção Invalida. Qual das opções te define:"
+						+ "\n1 - Calmo(a)"
+						+ "\n2 - Nervoso(a)"
+						+ "\n3 - Agressivo(a)");
+				opc = leia.nextInt();
+			}
 			
 			if(opc == 1) {
 				contPeCalma++;

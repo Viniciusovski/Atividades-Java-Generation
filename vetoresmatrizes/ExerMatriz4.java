@@ -65,52 +65,42 @@ public class ExerMatriz4 {
 			for (int linha = 0; linha < 2; linha++) {
 
 				for (int coluna = 0; coluna < 2; coluna++) {					
-					matriz3[linha][coluna] = matriz1[linha][coluna] - matriz2[linha][coluna];
-				}
-			}
-			// Mostrar matriz 3
-			System.out.println("Matriz 2");
-			for (int linha = 0; linha < 2; linha++) {
-
-				for (int coluna = 0; coluna < 2; coluna++) {
-					//
-					//System.out.printf("%.1f \t", matriz2[linha][coluna]);
+					matriz3[linha][coluna] = matriz2[linha][coluna] - matriz1[linha][coluna];
+					//Mostrar matriz 3
 					System.out.print("[ "+matriz3[linha][coluna]+" ]");
 				}
 				System.out.println("\n");
-			}
+			}			
 			break;
 		case 3:
 			System.out.println("Valor para a constante");
 			con = leia.nextFloat();
-			//Primeira matriz
+			
 			for (int linha = 0; linha < 2; linha++) {
 
 				for (int coluna = 0; coluna < 2; coluna++) {					
 					matriz1[linha][coluna] = matriz1[linha][coluna] + con;
-				}
-			}
-			//Segunda matriz
-			for (int linha = 0; linha < 2; linha++) {
-
-				for (int coluna = 0; coluna < 2; coluna++) {					
 					matriz2[linha][coluna] = matriz2[linha][coluna] + con;
 				}
 			}
 			//Mostrar matriz
+			System.out.println("Matriz 1");
 			for (int linha = 0; linha < 2; linha++) {
 
 				for (int coluna = 0; coluna < 2; coluna++) {
-					System.out.println("\t Matriz 1");
-					System.out.printf("\t %.1f \t", matriz1[linha][coluna]);
+					
+					System.out.print("[ "+matriz2[linha][coluna]+" ]");
 				}
+				System.out.println("\n");
 			}
+			System.out.println("Matriz 2");
 			for (int linha = 0; linha < 2; linha++) {
 
 				for (int coluna = 0; coluna < 2; coluna++) {
-					System.out.println("\t Matriz 2");
-					System.out.printf("\t %.1f \t", matriz2[linha][coluna]);
+					
+					System.out.print("[ "+matriz2[linha][coluna]+" ]");
 				}
+				System.out.println("\n");
 			}
 			break;
 		case 4:

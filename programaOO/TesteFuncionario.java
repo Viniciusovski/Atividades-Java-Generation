@@ -1,4 +1,4 @@
-package poo;
+package programaOO;
 
 public class TesteFuncionario {
 

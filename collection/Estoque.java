@@ -19,17 +19,17 @@ public class Estoque {
 		lista2.add(pro2);
 		lista2.add(pro3);
 		
-//		Produtos prod;
-//		prod = est.criarProduto();
-//		//lista.add(prod);
-//		est.armazenarProdutos(lista, prod);
-//		prod = est.criarProduto();
-//		//lista.add(prod);
-//		est.armazenarProdutos(lista, prod);		
-//				
-//		est.mostrarLista(lista);
-//		est.removerProduto(lista);
-//		est.mostrarLista(lista);
+		Produtos prod;
+		prod = est.criarProduto();
+		//lista.add(prod);
+		est.armazenarProdutos(lista, prod);
+		prod = est.criarProduto();
+		//lista.add(prod);
+		est.armazenarProdutos(lista, prod);		
+				
+		est.mostrarLista(lista);
+		est.removerProduto(lista);
+		est.mostrarLista(lista);
 		est.atualizarLista(lista2);
 		est.mostrarLista(lista2);
 
